@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.o7planning.simplelistview">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- FIRST COMES THE CLASS TO WHICH YOU WILL GO, THEN COMES THE CLASS FROM WHICH U ARE GONNA CALL THE INTENT -->
+            <activity
+                android:name=".CountryActivity"
+                android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".DataPassing.ActivityToActivity.ProfileActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".DataPassing.ActivityToActivity.ProfileActivityData"
+            android:parentActivityName=".DataPassing.ActivityToActivity.ProfileActivity" />
+
+        <activity
+            android:name=".DataPassing.ActivityToFrag.FragmentDataPassingActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ArrayAdapterExample.BasicArrayAdapter"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".API.MainActivity_API"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".API.Todo.API_Todos"
+            android:parentActivityName=".API.MainActivity_API" />
+
+        <activity
+            android:name=".API.Heros.API_Heros"
+            android:parentActivityName=".API.MainActivity_API" />
+
+        <activity android:name=".utils.Popup"
+            android:theme="@style/AppTheme.CustomTheme"/>
+
+        <activity android:name=".DB.MainActivity_DB"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".DB.SQLite.ActivitySqLite"
+            android:parentActivityName=".DB.MainActivity_DB"/>
+
+        <activity android:name=".DB.RoomDB.RoomDB.ActivityRoomDB"
+            android:parentActivityName=".DB.MainActivity_DB"/>
+    </application>
+
+</manifest>

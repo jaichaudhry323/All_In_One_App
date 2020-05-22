@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SimpleListView</string>
+    <string name="popup">Popup</string>
+</resources>

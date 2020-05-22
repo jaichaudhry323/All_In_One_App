@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_room_db"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="394dp"
+        android:layout_height="703dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496">
+
+        <Button
+            android:id="@+id/enter_user_list_data_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="288dp"
+            android:text="UserList to DB"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/find_user_by_id_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginBottom="168dp"
+            android:text="Find by id" />
+
+        <EditText
+            android:id="@+id/find_user_by_id_textview"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="225dp"
+            android:hint="Find by id">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/user_attribute_textview"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="396dp"
+            android:hint="Enter user attribute">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/add_to_list_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="340dp"
+            android:text="add attr to list"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/delete_user_data_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginBottom="68dp"
+            android:text="delete user data" />
+
+        <EditText
+            android:id="@+id/lastname_roomdb_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginBottom="343dp"
+            android:hint="Enter lastname">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="41dp"
+            android:layout_marginBottom="451dp"
+            android:text="ENTER USER DETAILS"
+            android:textAlignment="center"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/view_user_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="71dp"
+            android:text="View User Data" />
+
+        <Button
+            android:id="@+id/enter_word_data_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="551dp"
+            android:text="Enter Data" />
+
+        <EditText
+            android:id="@+id/word_textview"
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="609dp"
+            android:hint="ENTER WORD">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="661dp"
+            android:text="ENTER WORD"
+            android:textAlignment="center"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/enter_user_data_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="287dp"
+            android:text="Enter Data"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/view_word_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="207dp"
+            android:layout_marginBottom="551dp"
+            android:text="View word Data" />
+
+        <EditText
+            android:id="@+id/firstname_roomdb_textview"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="396dp"
+            android:hint="Enter firstname">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/delete_word_data_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginBottom="498dp"
+            android:text="delete word data" />
+
+        <Button
+            android:id="@+id/add_user_to_list_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="138dp"
+            android:layout_marginBottom="288dp"
+            android:text="Add User To List"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
