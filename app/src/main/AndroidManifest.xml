@@ -1,17 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="org.o7planning.simplelistview">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
 
     <application
+        android:name=".Umbeo.AppUsageStats.app.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="ExtraText">
+
+        //AppMonitor One
+        <service android:name=".Umbeo.AppUsageStats.Service.AppService" />
+        <service android:name=".Umbeo.AppUsageStats.Service.AlarmService" />
+
+        <service android:name=".Service4.YourService" />
+
+
+        // google developers one
+        <!--        <receiver-->
+        <!--            android:name=".Service2.AlarmReceiver"-->
+        <!--            android:enabled="true"-->
+        <!--            android:exported="false">-->
+        <!--        </receiver>-->
+
+        <receiver
+            android:name=".Umbeo.AppUsageStats.receiver.AlarmReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ALARM_RECEIVER" />
+            </intent-filter>
+        </receiver>
+        //--
+
+        <receiver android:name=".Service2.NotificationReminderBroadcast" />
+
+        <receiver
+            android:name=".Service4.Restarter"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.REBOOT" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+                <action android:name="android.intent.action.MY_PACKAGE_SUSPENDED" />
+
+                <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.MY_PACKAGE_SUSPENDED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".Service3.ScreenReminderBroadcast"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.REBOOT" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <!--                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />-->
+                <!--                <action android:name="android.intent.action.PACKAGE_REPLACED" />-->
+                <!--                <action android:name="android.intent.action.PACKAGE_RESTARTED" />-->
+                <!--                <action android:name="android.intent.action.MY_PACKAGE_SUSPENDED" />-->
+
+                <!--                <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED" />-->
+                <!--                <action android:name="android.intent.action.PACKAGE_REMOVED" />-->
+                <!--                <action android:name="android.intent.action.MY_PACKAGE_SUSPENDED" />-->
+                <!--                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />-->
+            </intent-filter>
+        </receiver>
+
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,9 +101,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity> <!-- FIRST COMES THE CLASS TO WHICH YOU WILL GO, THEN COMES THE CLASS FROM WHICH U ARE GONNA CALL THE INTENT -->
-            <activity
-                android:name=".CountryActivity"
-                android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CountryActivity"
+            android:parentActivityName=".MainActivity" />
 
         <activity
             android:name=".DataPassing.ActivityToActivity.ProfileActivity"
@@ -51,17 +133,53 @@
             android:name=".API.Heros.API_Heros"
             android:parentActivityName=".API.MainActivity_API" />
 
-        <activity android:name=".utils.Popup"
-            android:theme="@style/AppTheme.CustomTheme"/>
+        <activity
+            android:name=".utils.Popup"
+            android:theme="@style/AppTheme.CustomTheme" />
 
-        <activity android:name=".DB.MainActivity_DB"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".DB.MainActivity_DB"
+            android:parentActivityName=".MainActivity" />
 
-        <activity android:name=".DB.SQLite.ActivitySqLite"
-            android:parentActivityName=".DB.MainActivity_DB"/>
+        <activity
+            android:name=".DB.SQLite.ActivitySqLite"
+            android:parentActivityName=".DB.MainActivity_DB" />
 
-        <activity android:name=".DB.RoomDB.RoomDB.ActivityRoomDB"
-            android:parentActivityName=".DB.MainActivity_DB"/>
+        <activity
+            android:name=".DB.RoomDB.RoomDB.ActivityRoomDB"
+            android:parentActivityName=".DB.MainActivity_DB" />
+
+        <activity
+            android:name=".D_ARES.D_ARES_MainActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".D_ARES.GridTwoLineActivity" />
+
+        <activity android:name=".Umbeo.UmbeoActivity" />
+
+        <activity android:name=".Umbeo.Screens.UmbeoSwipeActivity" />
+        <activity android:name=".Umbeo.Screens.UmbeoLoginActivity" />
+        <activity android:name=".Umbeo.Screens.UmbeoProfileActivity" />
+
+        <activity android:name=".Umbeo.SlidingImageActivity" />
+
+        <activity android:name=".Umbeo.Charts.DemoBase" />
+        <activity android:name=".Umbeo.Charts.ListViewMultiChartActivity" />
+
+        <activity
+            android:name=".Umbeo.AppUsageStats.AppUsageActivity"
+            android:theme="@style/BaseTheme" />
+
+        <activity android:name=".retrofit.Activity_Retrofit" />
+
+        <activity android:name=".D_ARES.ListNewsImageActivity" />
+
+        <activity android:name=".Umbeo.Screens.UmbeoWaterStatsActivity" />
+        <activity android:name=".Umbeo.Screens.UmbeoWaterMainActivity" />
+
+        <activity android:name=".Umbeo.Screens.UmbeoCompleteProfileActivity" />
+        <activity android:name=".Umbeo.Screens.UmbeoStepsProgressbarActivity" />
+
     </application>
 
 </manifest>

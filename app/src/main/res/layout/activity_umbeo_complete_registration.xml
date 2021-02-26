@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--    android:background="@color/light_blue_600"-->
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+    <!--        -->
+    <!--        -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:text="For Enhanced Analysis "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/skip_extra_data_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="58dp"
+            android:background="@drawable/btn_rounded_green_300"
+            android:text="Skip" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="342dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@android:color/black"
+            android:ems="10"
+            android:hint="Height(in cms)"
+            android:inputType="textPersonName"
+            android:textColorHint="#00688B" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="192dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@android:color/black"
+            android:ems="10"
+            android:hint="Age"
+            android:textColorHint="#00688B" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="272dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@android:color/black"
+            android:ems="10"
+            android:hint="Weight(in cms)"
+            android:inputType="textPersonName"
+            android:textColorHint="#00688B" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="431dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Gender"
+                android:textColor="#00688B"
+
+                />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Female" />
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="64dp"
+                android:text="Male" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_extra_data_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="231dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/btn_rounded_green_300"
+            android:text="Submit" />
+
+    </RelativeLayout>
+    <!--    </ScrollView>-->
+    <!--    -->
+    <!--    -->
+</androidx.constraintlayout.widget.ConstraintLayout>

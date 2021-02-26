@@ -5,9 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
-import org.o7planning.simplelistview.API.Todo.API_Todo;
 import org.o7planning.simplelistview.R;
 
 import java.util.ArrayList;
@@ -18,7 +18,7 @@ public class API_TodoAdapter extends ArrayAdapter<API_Todo> {
     ArrayList<API_Todo> mTodoList;
 
     public API_TodoAdapter(Context context, ArrayList<API_Todo> todolist) {
-        super(context, R.layout.todo_item_layout, todolist);
+        super(context, R.layout.item_todo_layout, todolist);
         mContext = context;
         mTodoList = todolist;
     }
@@ -28,7 +28,7 @@ public class API_TodoAdapter extends ArrayAdapter<API_Todo> {
         LayoutInflater layoutInflater = LayoutInflater.from(mContext);
 
         if (convertView == null) {
-            convertView = layoutInflater.inflate(R.layout.todo_item_layout, null, false);
+            convertView = layoutInflater.inflate(R.layout.item_todo_layout, null, false);
         }
 
         TextView TitleTextView = convertView.findViewById(R.id.todo_title);
@@ -36,6 +36,7 @@ public class API_TodoAdapter extends ArrayAdapter<API_Todo> {
         TextView IdTextView = convertView.findViewById(R.id.todo_id);
         TextView CompletedTextView = convertView.findViewById(R.id.todo_completed);
         TextView UserNumberTextView = convertView.findViewById(R.id.api_user_number);
+        CheckBox SelectCheckBox = convertView.findViewById((R.id.checkBox));
 
         API_Todo obj = mTodoList.get(position);
 

@@ -25,7 +25,7 @@ public class API_Todos extends AppCompatActivity {
 
     String mTodoUrl = "https://jsonplaceholder.typicode.com/todos";
     ProgressBar mProgressBar;
-    ArrayList<API_Todo> mTodoList = new ArrayList<API_Todo>();
+    ArrayList<API_Todo> mTodoList = new ArrayList<>();
     ListView mTodoListView;
 
     @Override
@@ -39,29 +39,6 @@ public class API_Todos extends AppCompatActivity {
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
 
-//        JsonObjectRequest jsonObjectRequest=new JsonObjectRequest(Request.Method.GET,
-//                mTodoUrl, null, new Response.Listener<JSONObject>() {
-//            @Override
-//            public void onResponse(JSONObject response) {
-//                mProgressBar.setVisibility(View.GONE);
-//                try {
-//                    ToastUtil.makeLongToast(getApplicationContext(), "Received");
-//                    System.out.println("Response is = "+response.getString("title"));
-//                } catch (JSONException e) {
-//                    ToastUtil.makeLongToast(getApplicationContext(), "there is an error wrt json");
-//                    e.printStackTrace();
-//                }
-//            }
-//        }, new Response.ErrorListener() {
-//            @Override
-//            public void onErrorResponse(VolleyError error) {
-//                ToastUtil.makeLongToast(getApplicationContext(), "there is an error in response");
-//                error.printStackTrace();
-//            }
-//        });
-//
-//        requestQueue.add(jsonObjectRequest);
-
         StringRequest stringRequest = new StringRequest(Request.Method.GET, mTodoUrl, response -> {
 
             mProgressBar.setVisibility(View.GONE);
@@ -70,12 +47,14 @@ public class API_Todos extends AppCompatActivity {
 //            System.out.println("Response=" + response);
             System.out.println("Response=");
 
+//        requestQueue.add(jsonObjectRequest);
 //            JSONObject jsonObject = null;
+
             try {
                 JSONArray jsonArray = new JSONArray(response);
 
                 System.out.println("Response=" + jsonArray.getJSONObject(0));
-                System.out.println("Response Lenght=" + jsonArray.length());
+                System.out.println("Response Length=" + jsonArray.length());
 
 //      JSONArray jsonArray = jsonObject.getJSONArray("todos");           // [  {},{},{}  ]    <-- array
 //      JSONObject jsonObject2 = jsonObject.getJSONObject("todos");       //  { {},{},{} }  <-- Object
@@ -99,10 +78,9 @@ public class API_Todos extends AppCompatActivity {
             API_TodoAdapter adapter = new API_TodoAdapter(getApplicationContext(), mTodoList);
             mTodoListView.setAdapter(adapter);
 
-        },
-                error -> {
-                    ToastUtil.makeLongToast(getApplicationContext(), "there is an error in response");
-                });
+        }, error -> {
+            ToastUtil.makeLongToast(getApplicationContext(), "there is an error in response");
+        });
 
         requestQueue.add(stringRequest);
 

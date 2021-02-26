@@ -10,10 +10,12 @@ public class SnackbarUtil {
         Snackbar snackbar =  Snackbar.make(view , text , Snackbar.LENGTH_LONG);
         snackbar.show();
     }
+
     public static void makeShortSnack(View view , String text) {
         Snackbar snackbar =  Snackbar.make(view , text , Snackbar.LENGTH_SHORT);
         snackbar.show();
     }
+
     public static void makeLongSnack(CoordinatorLayout coordinatorLayoutlayout , String text) {
         Snackbar snackbar =  Snackbar.make(coordinatorLayoutlayout , text , Snackbar.LENGTH_LONG);
         snackbar.show();

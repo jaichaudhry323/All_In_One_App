@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import org.o7planning.simplelistview.DB.RoomDB.RoomDB.ActivityRoomDB;
 import org.o7planning.simplelistview.DB.SQLite.ActivitySqLite;
 import org.o7planning.simplelistview.R;
+import org.o7planning.simplelistview.utils.NetworkUtil;
+import org.o7planning.simplelistview.utils.ToastUtil;
 
 public class MainActivity_DB extends AppCompatActivity {
 
@@ -34,6 +36,15 @@ public class MainActivity_DB extends AppCompatActivity {
         mSqliteDbButton.setOnClickListener(v->{
             Intent intent=new Intent(this, ActivitySqLite.class);
             startActivity(intent);
+        });
+
+        NetworkUtil.getMutableLiveDataNetworkStatus().observe(this,(internet)->{
+            if(internet){
+                ToastUtil.makeShortToast(this,"From LiveData Internet Avilable");
+            }
+            else{
+                ToastUtil.makeShortToast(this,"From LiveData Internet Not Avilable");
+            }
         });
 
     }

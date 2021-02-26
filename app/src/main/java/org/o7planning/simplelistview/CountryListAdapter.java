@@ -49,7 +49,7 @@ public class CountryListAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {           // position -> index of next element  | convertView -> the object we are placing in list as rows , can be made from scratch or be reused
         ViewHolder holder;                                                                  // holder === listview that we are populating
         if (convertView == null) {                                                          // if the listview we are populating isnt already inflated then inflate it
-            convertView = layoutInflater.inflate(R.layout.list_item_layout, null);     // list_item_layout is the layout of each object i.e each row inside list view
+            convertView = layoutInflater.inflate(R.layout.item_list_layout, null);     // item_list_layout is the layout of each object i.e each row inside list view
             holder = new ViewHolder();
             holder.flagView = convertView.findViewById(R.id.imageView_flag);
             holder.countryNameView = convertView.findViewById(R.id.textView_countryName);

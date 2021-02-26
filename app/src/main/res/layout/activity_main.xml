@@ -12,8 +12,56 @@
      android:layout_width="match_parent"
      android:layout_height="match_parent"
      app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.157"
      app:layout_constraintStart_toStartOf="parent"
-     tools:layout_editor_absoluteY="37dp">
+     tools:layout_editor_absoluteY="-15dp">
+
+
+  <ToggleButton
+      android:id="@+id/screen_tracking_toggle_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="141dp"
+      android:layout_marginBottom="197dp"
+      android:textOff="Scr trk off"
+      android:textOn="Scr trk on"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/activity_retrofit_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="146dp"
+      android:layout_marginBottom="139dp"
+      android:text="Retrofit"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/NextActivity_Button"
+      app:layout_constraintVertical_bias="0.98" />
+
+  <ToggleButton
+      android:id="@+id/alarmToggle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="6dp"
+      android:layout_marginBottom="127dp"
+      android:textOff="@string/alarm_off"
+      android:textOn="@string/alarm_on"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
 
   <Button
       android:id="@+id/api_button"
@@ -49,8 +97,8 @@
       android:layout_height="59dp"
       android:layout_alignParentStart="true"
       android:layout_alignParentBottom="true"
-      android:layout_marginStart="118dp"
-      android:layout_marginBottom="111dp"
+      android:layout_marginStart="120dp"
+      android:layout_marginBottom="71dp"
       android:text="Next Activity"
       app:layout_constraintBottom_toTopOf="@+id/popup_button"
       app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +113,7 @@
       android:layout_alignParentStart="true"
       android:layout_alignParentBottom="true"
       android:layout_marginStart="143dp"
-      android:layout_marginBottom="53dp"
+      android:layout_marginBottom="11dp"
       android:text="Popup"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
@@ -150,9 +198,9 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_alignParentStart="true"
-      android:layout_alignParentTop="true"
-      android:layout_marginStart="13dp"
-      android:layout_marginTop="352dp"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="5dp"
+      android:layout_marginBottom="242dp"
       android:text="Basic Adapter" />
 
   <Button
@@ -161,10 +209,41 @@
       android:layout_height="wrap_content"
       android:layout_alignParentStart="true"
       android:layout_alignParentBottom="true"
-      android:layout_marginStart="135dp"
-      android:layout_marginBottom="184dp"
+      android:layout_marginStart="11dp"
+      android:layout_marginBottom="185dp"
       android:text="DataBase "
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/advanced_ui_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="261dp"
+      android:text="D-Ares Utils" />
+
+  <Button
+      android:id="@+id/notification_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="8dp"
+      android:layout_marginBottom="309dp"
+      android:text="Notification " />
+
+  <Button
+      android:id="@+id/umbeo_activity_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginEnd="12dp"
+      android:layout_marginBottom="321dp"
+      android:text="Umbeo Utils"
+      app:layout_constraintEnd_toEndOf="parent" />
  </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

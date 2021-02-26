@@ -21,7 +21,7 @@ public class CountryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_counrty);
+        setContentView(R.layout.activity_country);
 
         mPrevButton = findViewById(R.id.prev_button);
         mPrevButton.setOnClickListener(v -> {

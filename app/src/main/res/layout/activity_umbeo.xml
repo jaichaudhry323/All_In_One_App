@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/umbeo_bottom_fragment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginBottom="344dp"
+            android:text="Bottom Fragment" />
+
+        <Button
+            android:id="@+id/steps_progressbar_umbeo_activity_button"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="224dp"
+            android:layout_marginBottom="297dp"
+            android:text="Steps Progressbar" />
+
+        <Button
+            android:id="@+id/complete_profile_umbeo_activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="277dp"
+            android:text="Complete Profile" />
+
+        <Button
+            android:id="@+id/water_stats_umbeo_activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="226dp"
+            android:layout_marginBottom="236dp"
+            android:text="Water Stats Activity" />
+
+        <Button
+            android:id="@+id/app_usage_activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="215dp"
+            android:text="App Usage Stats" />
+
+        <Button
+            android:id="@+id/water_main_umbeo_activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="291dp"
+            android:layout_marginBottom="177dp"
+            android:text="Water Main" />
+
+        <Button
+            android:id="@+id/scroll_charts_button"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="227dp"
+            android:layout_marginBottom="11dp"
+            android:text="Scroll charts " />
+
+        <Button
+            android:id="@+id/sliding_image_activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="153dp"
+            android:text="horizontal scroll" />
+
+        <Button
+            android:id="@+id/profile_activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="285dp"
+            android:layout_marginBottom="122dp"
+            android:text="Profile Page" />
+
+        <Button
+            android:id="@+id/login_screen_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginBottom="17dp"
+            android:text="Login"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/swipe_screen_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginBottom="83dp"
+            android:text="swipe screen"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/signin_activity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="311dp"
+            android:layout_marginBottom="65dp"
+            android:text="SignIn" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

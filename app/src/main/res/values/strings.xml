@@ -1,4 +1,91 @@
 <resources>
     <string name="app_name">SimpleListView</string>
     <string name="popup">Popup</string>
+
+    <!--    MaterialX-->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyCbNPy5hqDEQFNNRXXXXXXXXXXXXXXXXXXX
+    </string>
+
+    <string name="step_of">Step %1$d of %2$d</string>
+    <string name="section_format">Section : %1$d</string>
+
+    <string name="about_text">The best android implementation of material UI components. This app implemented based on Google Design Guidelines.
+    </string>
+
+    <string name="version_unknown">Unknown</string>
+    <string name="app_version">Version</string>
+    <string name="default_notification_channel_id">Default</string>
+    <string name="webview_loading">Load Content... </string>
+
+
+    <!--    MaterialX-->
+
+
+<!--    <string name="notification_title">Stand Up Alert</string>-->
+    <string name="notification_text">You should stand up and walk around now!</string>
+    <string name="alarm_off">Alarm off</string>
+    <string name="alarm_on">Alarm on</string>
+
+<!--    AppMonitor-->
+    <string name="about">About</string>
+
+    <string name="close">Close</string>
+
+    <string name="detail">Details</string>
+    <string name="duration">Duration</string>
+    <string name="sort_by">Sort</string>
+
+    <string name="enable_apps_monitor">Enable apps monitor</string>
+    <string name="enable_apps_monitoring">Apps monitoring</string>
+
+    <string name="feedback">feedback: zhishoumowen@gmail.com</string>
+
+    <string name="grant_success">Grand permission successfully</string>
+
+    <string name="hide_system_apps">Hide system Apps</string>
+    <string name="hide_uninstall_apps">Hide uninstalled Apps</string>
+
+    <string name="ignore">Ignore this app</string>
+    <string name="ignore_hint">Apps in this list will be hidden</string>
+    <string name="ignore_list">Ignore list</string>
+    <string name="ignore_success">Move to ignore list successfully</string>
+
+    <string name="more">More detail</string>
+    <string name="app_info">App info</string>
+
+    <string name="notification_title">AppTimeline running</string>
+    <string name="notification_message">monitoring your app usage</string>
+    <string name="not_support">You device not support monitoring</string>
+
+    <string name="open">Open</string>
+
+    <string name="refresh">Refresh</string>
+
+    <string name="settings">Settings</string>
+    <string name="settings_function">Functions</string>
+    <string name="settings_more">More</string>
+    <string name="share">Like and share</string>
+    <string name="share_desc">Hey check out this app, it\'s so cool, it can help checkout every app\'s time your spend on: %1$s%2$s</string>
+    <string name="slogan">Monitor Apps usage</string>
+    <string name="sort">Sort By</string>
+
+    <string name="toast_permission">Please find \"AppsTimeline\" and grant the permission</string>
+    <string name="times">%1$s · %2$d times</string>
+    <string name="times_only">times</string>
+    <string name="total">%1$s</string>
+
+    <string name="version">v %1$s</string>
+
+    <string name="wifi_data">WiFi:%1$s · Mobile:%2$s</string>
+<!--    <string name="more" type="id">more</string>-->
+<!--    <string name="open" type="id">open</string>-->
+
+<!--    AppMonitor-->
+
+
 </resources>
